@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saludo Personalizado</title>
+    <!-- Enlace al archivo CSS -->
+    <link rel="stylesheet" href="clase.css">
+</head>
+<body>
+    <h2>El Saludo Personalizado</h2>
+  
+    <input type="text" id="nombre" placeholder="Escribe tu nombre">
+    <button onclick="mostrarSaludo()">Saludar</button>
+  
+    <p id="mensaje"></p>
+
+    <script>
+        function mostrarSaludo() {
+            const nombre = document.getElementById("nombre").value;
+            document.getElementById("mensaje").textContent = `¡Hola, ${nombre}! Bienvenido`;
+        }
+    </script>
+</body>
+</html>
